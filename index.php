@@ -31,7 +31,7 @@
     </script>
 </head>
 <body>
-    <h3 class = "display-3"> Login Your Account </h3>
+    <h3> Login Your Account </h3>
     <div class = "container">
     <form  method = "POST" id = "form">
     <div class = "form-group">
@@ -45,6 +45,7 @@
         <input type = "reset" name = "reset" class = "btn btn-danger">
     </div>
     </form>
+    <a href = "Singup.php"> Create an account </a>
     </div>
 </body>
 </html>

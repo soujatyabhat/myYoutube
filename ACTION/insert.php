@@ -1,13 +1,5 @@
 <?php
-$host = "localhost";
-$username = "root";
-$password = "";
-$database = "video_upload";
-$connection = mysqli_connect($host,$username,$password,$database); 
-if(!($connection))
-    {
-        die("Connectio Failed".mysqli_connect_error());
-    }
+include 'connect.php';
 $aid = $_POST['ID'];
 $apassword = $_POST['password'];
 $sql = "select * from user where u_id = '$aid' and u_password = '$apassword'";

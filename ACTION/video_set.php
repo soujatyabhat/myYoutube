@@ -1,9 +1,5 @@
 <?php 
-$uid = $vid = $title = $description = $pubdate = " ";
-$host = "localhost";
-$username = "root";
-$password = "";
-$database = "video_upload";
+include 'connect.php';
 $connection = mysqli_connect($host,$username,$password,$database); 
 if(!($connection))
     {

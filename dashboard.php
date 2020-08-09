@@ -15,15 +15,7 @@
     
     <p style = "padding:30px;"> <?php echo "User ID : ". $_SESSION["u_id"]."<br>" ."User Name : ". $_SESSION["u_name"]?> <a href = "ACTION/logout.php" class = "btn btn-danger" style = "float:right;"> Logout </a> </p> 
     <?php
-        $host = "localhost";
-        $username = "root";
-        $password = "";
-        $database = "video_upload";
-        $connection = mysqli_connect($host,$username,$password,$database); 
-        if(!($connection))
-            {
-                die("Connectio Failed".mysqli_connect_error());
-            }
+        include 'ACTION/connect.php';
         $id = $_SESSION["u_id"];
         $sql1 = "select *from u_video";
         $result1 = mysqli_query($connection,$sql1);

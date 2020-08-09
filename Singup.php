@@ -21,11 +21,13 @@
                  success:function(data)
                  {
                      if(data == 1)
-                        alert("Data has Submitted");
+                        {
+                            alert("Data has Submitted");
+                            location.href = "index.php";
+                        }
                     else    
                         {
                         alert("Data has not submitted");
-                        location.href = "index.php";
                         }
 
                  }
@@ -55,7 +57,7 @@
         </div>
         <div class = "form-group">
             <label class = "form-input" style = "float:left"> Password : </label>
-            <input type = "text" name = "password" class = "form-control col-md-3" style = "margin-left : 100px;"  required>
+            <input type = "password" name = "password" class = "form-control col-md-3" style = "margin-left : 100px;"  required>
             <br>
             <br>
             <input type = "submit" name = "submit" id = "submit" value = "Upload" class = "form-control btn btn-success col-md-2">
@@ -63,6 +65,7 @@
         </form>
         
 </div>
+<a href = "index.php"> Go Back to Index </a>
 </div>
 </body>
 </html>

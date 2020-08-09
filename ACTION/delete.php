@@ -1,9 +1,5 @@
 <?php
-$host = "localhost";
-$username = "root";
-$password = "";
-$database = "video_upload";
-$connection = mysqli_connect($host,$username,$password,$database); 
+include 'connect.php';
 $id = $_GET['v_id'];
 $sql = "delete from u_video where v_id = '$id'";
 unlink("upload/".$id);

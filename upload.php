@@ -14,11 +14,11 @@
             con = confirm("Do you want review the process again ?");
             if (con == true)
             {
-                return true;
+                return false;
             }
             else
             {
-                return false;
+                return true;
             }
             
         }

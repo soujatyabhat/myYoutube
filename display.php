@@ -12,6 +12,10 @@
 <body style = "background-color:silver;">
     <?php
         session_start();
+         if(!(isset($_SESSION["u_id"])))
+            {
+            header("location:index.php");
+             }
         $u_id = $_SESSION['u_id'];
         $v_id = $_GET['v_id'];
     ?>
@@ -25,6 +29,6 @@
 </div>
 <br>
 <br>
-<a class = "btn btn-danger " href = "dashboard.php?u_id=<?php echo $u_id?>"> Upload New Video </a>
+<a class = "btn btn-danger " href = "dashboard.php?u_id=<?php echo $u_id?>"> Dashboard </a>
 </body>
 </html>

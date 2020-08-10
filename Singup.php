@@ -38,34 +38,35 @@
     </script>
 </head>
 <body>
-<h1 class = "display-1">  Upload Your Video: </h1>
 <br>
 <div class = "container">
-        <form method = "POST" enctype="multipart/form-data" id = "form">
+<h3> Signup Your Account </h3>
+<br>
+<form method = "POST" enctype="multipart/form-data" id = "form">
        
         <div class = "form-group">
-            <label class = "form-input" style = "float:left"> ID : </label>
-            <input type = "text" name = "id" class = "form-control col-md-3" style = "margin-left : 100px;" required>
-            <br>
-            <br>
+        <label> User ID : </label> 
+            <input type = "text" name = "id" class = "form-control col-md-3" required>
+
+        <br>
+        <label> Name : </label> 
+            <input type = "text" name = "name" class = "form-control col-md-3" required>
+
+         <br>
+        <label> Password : </label> 
+            <input type = "password" name = "password" class = "form-control col-md-3" required>
         </div>
-        <div class = "form-group">
-            <label class = "form-input" style = "float:left"> Name : </label>
-            <input type = "text" name = "name" class = "form-control col-md-3" style = "margin-left : 100px;"  required>
-            <br>
-            <br>
-        </div>
-        <div class = "form-group">
-            <label class = "form-input" style = "float:left"> Password : </label>
-            <input type = "password" name = "password" class = "form-control col-md-3" style = "margin-left : 100px;"  required>
-            <br>
-            <br>
-            <input type = "submit" name = "submit" id = "submit" value = "Upload" class = "form-control btn btn-success col-md-2">
-            <input type = "reset" name = "reset" class = "form-control btn btn-danger col-md-2">
-        </form>
-        
-</div>
+        <br>
+        <input type = "submit" name = "submit" id = "submit" value = "Upload" class = "form-control btn btn-success col-md-1">
+        <input type = "reset" name = "reset" class = "form-control btn btn-danger col-md-1">
+
+<br>
+<br>
 <a href = "index.php"> Go Back to Index </a>
+</form>  
+</div>
+
+
 </div>
 </body>
 </html>

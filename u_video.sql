@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 08, 2020 at 07:56 PM
+-- Generation Time: Aug 09, 2020 at 06:49 AM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.2.31
 
@@ -24,18 +24,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
---
-
-CREATE TABLE `user` (
-  `u_id` int(30) NOT NULL,
-  `name` varchar(100) NOT NULL,
-  `u_password` varchar(40) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `u_video`
 --
 
@@ -50,12 +38,6 @@ CREATE TABLE `u_video` (
 --
 -- Indexes for dumped tables
 --
-
---
--- Indexes for table `user`
---
-ALTER TABLE `user`
-  ADD PRIMARY KEY (`u_id`);
 
 --
 -- Indexes for table `u_video`

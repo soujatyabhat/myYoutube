@@ -25,8 +25,15 @@
     </script>
 </head>
 <body>
-<h1 class = "display-1">  Upload Your Video: </h1>
+<h1>  Upload Your Video: </h1>
 <div class = "container" id = "display">
+    <?php
+    session_start();
+     if(!(isset($_SESSION["u_id"])))
+        {
+            header("location:index.php");
+        }
+    ?>
         <center>
         <form action = "ACTION/video_set.php" method = "POST" enctype="multipart/form-data" onsubmit = "return check()">
        

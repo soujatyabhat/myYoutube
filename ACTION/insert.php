@@ -14,7 +14,7 @@ if($result = mysqli_prepare($connection,$sql))
                 session_start();
                 $_SESSION["u_id"] = $id;
                 $_SESSION["u_name"] = $name;
-                echo "dashboard.php?"."u_id=".$_SESSION["u_id"]."&"."u_name=".$_SESSION["u_name"];
+                header("location:../dashboard.php");
             }
         else
             {

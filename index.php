@@ -10,30 +10,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-    $(document).ready(function(){
-        $("#submit").click(function(event){
-            $.ajax({
-                url:"ACTION/insert.php",
-                method : "post",
-                data : $("#form").serialize(),
-                datatype : "text",
-                success: function(data)
-                {
-                    if (data == 0)
-                        alert("Password Incorrect");
-                    else
-                        location.href = data;
-                }
-                
-            })
-        })
-    })
     </script>
 </head>
 <body>
     <h3> Login Your Account </h3>
     <div class = "container">
-    <form  method = "POST" id = "form">
+    <form action ="ACTION/insert.php" method = "POST" id = "form">
     <div class = "form-group">
         <br>
         <label> User ID : </label> <input type = "text" name = "ID" class = "form-control col-md-3" required>
